@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!--External Link-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="bg-black">
+            <div class="logo">
+                <h1>FJ</h1>
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    {% block indexcontent %}
+    {% endblock %}
+</body>
+</html>
