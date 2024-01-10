@@ -11,28 +11,21 @@
     <link rel="stylesheet" href="{% static 'css/dist/content.css' %}" />
 </head>
 <body>
-    <header class="bg-black">
+    <header class="bg-black w-full lg:h-screen">
         <nav class="flex justify-between p-5" style="color:#f8fafc">
             <div class="logo ml-10">
                 <h1 class="font-kelly text-2xl">FJ</h1>
             </div>
-            <div class="menu-list w-3/5">
-                <ul >
-                    <li class="inline-block font-roboto mx-8"><a href="">Home</a></li>
-                    <li class="inline-block font-roboto mx-8"><a href="">Portfolio</a></li>
-                    <li class="inline-block font-roboto mx-8"><a href="">Team</a></li>
-                    <li class="inline-block font-roboto mx-8"><a href="">Contact</a></li>
-                </ul>
-            </div>
         </nav>
-        <div class="content h-0">
+        <div class="content px-1">
             {% block indexcontent %}
             {% endblock %}
         </div>
     </header>
     <section>
-        
+        {% block about %}
+        {% endblock %}
     </section>
-
+    {% include 'footer.html' %}
 </body>
 </html>

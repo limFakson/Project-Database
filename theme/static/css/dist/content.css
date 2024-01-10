@@ -9,6 +9,8 @@ body{
     background-image: url('https://avatars.mds.yandex.net/i?id=1762c9e1fadc495d7e85dffca135eddbaed905a6-9840106-images-thumbs&n=13');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: auto;
+    background-size: cover;
+}
+.introduction{
+    background-color: rgba(0, 0, 0, 0.3);
 }
