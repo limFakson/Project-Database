@@ -777,10 +777,6 @@ select {
   position: static;
 }
 
-.m-12 {
-  margin: 3rem;
-}
-
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -810,12 +806,8 @@ select {
   display: grid;
 }
 
-.h-svh {
-  height: 100svh;
-}
-
-.h-full {
-  height: 100%;
+.h-0 {
+  height: 0px;
 }
 
 .w-3\/5 {
@@ -824,14 +816,6 @@ select {
 
 .w-full {
   width: 100%;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
@@ -855,21 +839,12 @@ select {
   padding: 1.25rem;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-kelly {
   font-family: Kelly Slab, sans-serif;
 }
 
 .font-roboto {
   font-family: Roboto Condensed, sans-serif;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-2xl {

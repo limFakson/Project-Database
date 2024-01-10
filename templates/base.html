@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{% static 'css/dist/content.css' %}" />
 </head>
 <body>
-    <header class="bg-black h-svh">
+    <header class="bg-black">
         <nav class="flex justify-between p-5" style="color:#f8fafc">
             <div class="logo ml-10">
                 <h1 class="font-kelly text-2xl">FJ</h1>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="content m-12 h-full">
+        <div class="content h-0">
             {% block indexcontent %}
             {% endblock %}
         </div>
