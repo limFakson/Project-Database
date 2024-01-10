@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+body{
+    background-color: #f4f4f4;
+    font-family: "Roboto Condensed";
+}
+.content_background{
+    background-image: url('https://avatars.mds.yandex.net/i?id=1762c9e1fadc495d7e85dffca135eddbaed905a6-9840106-images-thumbs&n=13');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 35rem;
+}

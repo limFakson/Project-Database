@@ -42,7 +42,12 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                kelly: ['Kelly Slab', 'sans-serif'],
+                roboto: ['Roboto Condensed', 'sans-serif']
+            },
+        },
     },
     plugins: [
         /**
