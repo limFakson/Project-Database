@@ -7,23 +7,27 @@
     <title>Portfolio</title>
 
     <!--External Link-->
-    {% tailwind_css %}
     <link rel="stylesheet" href="{% static 'css/dist/content.css' %}" />
+    {% tailwind_css %}
 </head>
 <body>
-    <header class="bg-black w-full lg:h-screen">
+    <header class="bg-black w-full lg:h-screen grid">
         <nav class="flex justify-between p-5" style="color:#f8fafc">
             <div class="logo ml-10">
                 <h1 class="font-kelly text-2xl">FJ</h1>
             </div>
         </nav>
-        <div class="content px-1">
+        <div class="content self-center">
             {% block indexcontent %}
             {% endblock %}
         </div>
     </header>
     <section>
         {% block about %}
+        {% endblock %}
+    </section>
+    <section>
+        {% block project %}
         {% endblock %}
     </section>
     {% include 'footer.html' %}

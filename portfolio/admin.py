@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Project, AboutData
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('name', 'description')
+    list_display = ('name', 'description', 'link')
     
 class AboutDataAdmin(admin.ModelAdmin):
     list_display = ('syntax', 'description')

@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block indexcontent %}
-<div class="container h-96 bg-black mt-5 py-12">
+<div class=" h-[30rem] bg-black">
     <div class="content_background h-full w-full">
         <div class="introduction h-full w-full grid">
             <div class="index-content self-center text-center" style="color:#f4f4f4">
@@ -8,6 +8,76 @@
                 <p class="text-lg p-1">This is my project database</p>
             </div>
         </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block about %}
+<div class="block bg-zinc-950" style="color:#f4f4f4">
+    <div class="about p-8 sm:flex ">
+        <div class="description">
+            <span class="title p-4">
+                <h1 class="font-normal text-2xl">About Me</h1>
+            </span>
+            <span class="text p-2">
+                <p class="font-extralight  text-lg">{{ data.description }}</p>
+            </span>
+        </div>
+        <div class="image my-8 sm:w-3/5">
+            <img class="w-full h-full" src="{{ data.image }}" alt="">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block project %}
+<hr class="w-full" style="color:#f4f4f4">
+<div class="projects bg-neutral-950 py-4" style="color:#f4f4f4">
+    <span class="title text-center p-8">
+        <h1 class="font-normal text-2xl">Projects</h1>
+    </span>
+    <div class="row flex flex-wrap justify-center items-start m-8 gap-4">
+        {% for project in project %}
+        <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
+        <div class="col sm:w-[31.5%] h-[30rem]">
+            <div
+            class="block rounded-lg h-full bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div
+                class="relative overflow-hidden bg-cover bg-no-repeat pb-4"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                    <div class="project-image h-56 max-w-full">
+                        <img
+                        class="rounded-t-lg h-full w-full object-top"
+                        src="{{ project.image }}"
+                        alt="" />
+                    </div>
+                    <a href="#!">
+                        <div
+                        class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
+                    </a>
+                </div>
+                <div class="p-6">
+                    <h5
+                        class="mb-2 text-xl font-medium leading-tight text-neutral-800 selection: dark:text-neutral-50 py-2">
+                        {{ project.name }}
+                    </h5>
+                    <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200 py-2">
+                        {{ project.description }}
+                    </p>
+                    <a href="{{ project.link }}">
+                        <button
+                            type="button"
+                            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                            data-te-ripple-init
+                            data-te-ripple-color="light">
+                            Check-out
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

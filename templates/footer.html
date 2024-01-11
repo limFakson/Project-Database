@@ -7,12 +7,12 @@
 </head>
 <body>
     <footer>
-        <section class="container footer bg-black " style="color: #f4f4f4">
-            <div class="flex justify-center items-center flex-wrap">
-                <div class="logo w-full text-center py-4">
+        <section class="footer bg-black " style="color: #f4f4f4">
+            <div class="flex justify-center items-center flex-wrap sm:justify-start sm:items-start">
+                <div class="logo w-full text-center py-4 sm:w-[12.5%] sm:text-left sm:p-8">
                     <h1 class="font-kelly text-2xl">FJ</h1>
                 </div>
-                <div class="py-3 menu-list w-full text-center">
+                <div class="py-3 menu-list w-full sm:w-[31.5%] text-center sm:text-left">
                     <ul >
                         <li class="block font-roboto m-4"><a href="">Home</a></li>
                         <li class="block font-roboto m-4"><a href="">Portfolio</a></li>
@@ -20,14 +20,18 @@
                         <li class="block font-roboto m-4"><a href="">Contact</a></li>
                     </ul>
                 </div>
-                <div class="py-4 newletter w-full grid">
-                    <span class="form justify-self-center self-center">
-                        <input type="email" placeholder="Email">
-                        <button type="button">Send</button>
+                <div class="py-4 px-6 newletter w-full sm:w-[31.5%] sm:pt-16 grid">
+                    <span class="form w-full h-full justify-self-center self-center">
+                        <input type="email" class="w-[80%]" placeholder="Email">
+                        <button type="button" class="bg-zinc-950 w-[17%] h-full">Send</button>
                     </span>
                 </div>
             </div>
         </section>
+        <div class="footer bg-black text-center p-4" style="color:#f4f4f4">
+            <p>Made with ❤ by Fakson</p>
+            <p>&copy copyright 2024</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -135,3 +135,7 @@ STATIC_URL = 'theme/static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#media file (images or video)
+MEDIA_URL = '/portfolio/'
+MEDIA_ROOT = BASE_DIR / "portfolio/"
